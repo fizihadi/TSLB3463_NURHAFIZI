@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 1 - Sound Match</title>
+    <link rel="stylesheet" href="styleFirst.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-row">
+            <div class="task-label">STAGE 1: SOUND MATCH</div>
+            <nav><a href="index.html" class="nav-btn">Home</a></nav>
+        </div>
+
+        <div class="game-card">
+            <p>Listen to the sound, then find the correct letter!</p>
+            
+            <button id="play-btn" onclick="playCurrentSound()">🔊 Play Sound</button>
+
+            <div id="options-grid"></div>
+
+            <div id="feedback-message">Click the speaker to start!</div>
+            
+            <div class="score-display">Score: <span id="score">0</span>/8</div>
+        </div>
+    </div>
+
+    <script src="scriptFirst.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Purple Gradient Background */
+    background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Header & Nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.task-badge {
+    background-color: #fbcfe8;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.nav-links button {
+    background-color: #fbcfe8;
+    border: none;
+    padding: 5px 15px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+/* Main White Card */
+.main-card {
+    background-color: white;
+    padding: 60px 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.main-card h1 {
+    font-size: 5rem;
+    color: #6366f1; /* Purple text */
+    line-height: 1;
+}
+
+.main-card h2 {
+    font-size: 3.5rem;
+    color: #4b5563; /* Dark grey text */
+    font-weight: 400;
+}
+
+/* Stage Buttons */
+.stages-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.stage-btn {
+    background-color: #fbcfe8;
+    border: none;
+    flex: 1;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    color: #374151;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.stage-btn:hover {
+    transform: translateY(-5px);
+    background-color: #f9a8d4;
+}

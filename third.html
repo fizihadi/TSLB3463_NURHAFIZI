@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 3 - Word World Drag & Drop</title>
+    <link rel="stylesheet" href="thirdStyle.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header-row">
+            <div class="task-label">STAGE 3: WORD WORLD</div>
+            <nav><a href="index.html" class="nav-btn">Home</a></nav>
+        </div>
+
+        <div class="game-card">
+            <h1>Word World 🌍</h1>
+            <p>Drag each word into the bucket with the correct sound!</p>
+            
+            <div id="message">Great job! Keep sorting.</div>
+
+            <div class="word-pool" id="pool" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+
+            <div class="buckets-grid">
+                <div class="bucket" data-sound="s" ondrop="drop(event)" ondragover="allowDrop(event)">/s/</div>
+                <div class="bucket" data-sound="a" ondrop="drop(event)" ondragover="allowDrop(event)">/æ/</div>
+                <div class="bucket" data-sound="t" ondrop="drop(event)" ondragover="allowDrop(event)">/t/</div>
+                <div class="bucket" data-sound="p" ondrop="drop(event)" ondragover="allowDrop(event)">/p/</div>
+                <div class="bucket" data-sound="i" ondrop="drop(event)" ondragover="allowDrop(event)">/i/</div>
+                <div class="bucket" data-sound="n" ondrop="drop(event)" ondragover="allowDrop(event)">/n/</div>
+                <div class="bucket" data-sound="m" ondrop="drop(event)" ondragover="allowDrop(event)">/m/</div>
+                <div class="bucket" data-sound="d" ondrop="drop(event)" ondragover="allowDrop(event)">/d/</div>
+            </div>
+            
+            <div class="score-display">Words correctly sorted: <span id="score">0</span> / 16</div>
+        </div>
+    </div>
+
+    <script src="thirdScript.js"></script>
+</body>
+</html>

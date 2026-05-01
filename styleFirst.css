@@ -1,0 +1,41 @@
+body { background-color: #9b59b6; font-family: 'Comic Sans MS', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.main-container { width: 100%; max-width: 500px; text-align: center; }
+
+/* Navigation Styles */
+.header-row { display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center; }
+.task-label { background: #f8c9f0; padding: 8px 15px; border-radius: 20px; font-weight: bold; font-size: 14px; }
+.nav-btn { background: white; padding: 8px 15px; border-radius: 10px; text-decoration: none; color: #9b59b6; font-weight: bold; }
+
+.game-card { background: white; padding: 30px; border-radius: 30px; box-shadow: 0 10px 0 #7d5fff; }
+
+#play-btn {
+    background: #fdcb6e;
+    border: none;
+    padding: 20px 40px;
+    font-size: 24px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 0 #e17055;
+}
+
+#options-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+
+.sound-btn {
+    background: #81ecec;
+    border: 2px solid #00cec9;
+    padding: 15px 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#feedback-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 25px;
+}
+
+.score-display { margin-top: 15px; color: #636e72; font-weight: bold; }

@@ -1,0 +1,56 @@
+body { background-color: #9b59b6; font-family: 'Comic Sans MS', sans-serif; display: flex; justify-content: center; padding: 20px; }
+.main-container { width: 100%; max-width: 700px; text-align: center; }
+
+/* Navigation & Header */
+.header-row { display: flex; justify-content: space-between; margin-bottom: 15px; align-items: center; }
+.task-label { background: #f8c9f0; padding: 8px 15px; border-radius: 20px; font-weight: bold; font-size: 14px; color: #4a148c; }
+.nav-btn { background: white; padding: 8px 15px; border-radius: 10px; text-decoration: none; color: #9b59b6; font-weight: bold; }
+
+.game-card { background: white; padding: 25px; border-radius: 30px; box-shadow: 0 10px 0 #7d5fff; }
+
+/* The Pool area */
+.word-pool {
+    background: #f1f2f6;
+    min-height: 100px;
+    padding: 20px;
+    border: 3px dashed #9b59b6;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Draggable Word Tile */
+.word-tile {
+    background: #f1c40f;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: grab;
+    font-weight: bold;
+    border: 2px solid #f39c12;
+    color: #2c3e50;
+    user-select: none;
+}
+
+/* Sorting Buckets */
+.buckets-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+
+.bucket {
+    background: #e1eafc;
+    border: 2px solid #7d5fff;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #7d5fff;
+    transition: 0.2s;
+}
+
+#message { margin: 10px 0; font-weight: bold; color: #2ecc71; min-height: 20px; }
+.score-display { margin-top: 15px; font-weight: bold; color: #333; }
